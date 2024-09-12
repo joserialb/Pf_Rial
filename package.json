@@ -1,0 +1,17 @@
+{
+  "name": "entrega3rial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch-css": "sass --watch scss:css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.58.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+

@@ -1,0 +1,83 @@
+header {
+  background-color: $primary-color;
+  font-size: 1.8rem;
+  font-family: "Inconsolata", monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  &.slide-in {
+    animation: slideIn 0.5s ease-out;
+  }
+}
+
+.logo {
+  max-width: 150px;
+  opacity: 0.7;
+  border-radius: 9px;
+
+  @media (min-width: 992px) {
+    width: 250px; // Tamaño del logo para pantallas grandes
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+
+  .nav-link {
+    margin-left: 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: $text-color-light;
+    padding: 10px 20px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba($text-color-light, 0.2);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    margin-right: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.nav-link.active {
+  background-color: rgba($text-color-light, 0.5);
+  color: $primary-color;
+}

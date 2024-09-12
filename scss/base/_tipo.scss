@@ -1,0 +1,116 @@
+.servicios-box {
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $text-color-light;
+  
+    img {
+      width: 30%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .servicios-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .text-light {
+    color: $text-color-light;
+  }
+  
+  .somos-box img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .somos-box p {
+    color: $text-color-dark;
+    text-align: center;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+  
+h1.text-center {
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container.my-5 .form-label, 
+.container.my-5 .form-control, 
+.container.my-5 .btn {
+    font-size: 1.25rem; 
+     
+}
+
+
+.container.my-5 .btn {
+    font-size: 1.1rem; 
+}
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.start-50 {
+  left: 50%;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.8); // Fondo ligeramente transparente
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.collapse {
+  margin-top: 10px;
+}

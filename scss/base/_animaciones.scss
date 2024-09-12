@@ -1,0 +1,62 @@
+
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+ 
+  
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shake {
+    transition: transform 0.3s ease;
+  }
+  
+  .shake:hover {
+    animation: shake 0.5s ease;
+  }
+  
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(100%);
+      opacity: 0; 
+  }
+  100% {
+      transform: translateX(0); 
+      opacity: 1; 
+  }
+}
+
+
+.logo {
+  animation: slideInFromRight 6s ease-out;
+}
