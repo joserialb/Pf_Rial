@@ -25,15 +25,17 @@ body {
 }
 
 footer {
-  background-color:$primary-color;
-  color: #fff;
-  padding: 1rem;
-  margin-top: auto;
-  width: 100%;
-  transition: background-color 0.3s ease; /* Transición para el color de fondo */
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: $footer-padding;
+  height: 80px; // Ajuste para que coincida con el valor en el CSS corregido
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; 
 
   &:hover {
-    background-color: rgb(132, 160, 95); /* Color de fondo al pasar el ratón */
+    background-color: rgb(132, 160, 95); 
   }
 }
 

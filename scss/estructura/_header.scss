@@ -17,6 +17,10 @@ header {
   @media (min-width: 992px) {
     width: 250px; // Tamaño del logo para pantallas grandes
   }
+
+  @media (max-width: 576px) {
+    width: 120px;
+  }
 }
 
 .nav {
@@ -38,12 +42,6 @@ header {
   }
 }
 
-@media (max-width: 576px) {
-  .logo {
-    width: 120px;
-  }
-}
-
 .navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -52,10 +50,10 @@ header {
   font-size: 1.1rem;
   margin-right: 1rem;
   transition: color 0.3s ease;
-}
 
-.nav-link:hover {
-  color: #f8f9fa;
+  &:hover {
+    color: #f8f9fa;
+  }
 }
 
 @media (max-width: 768px) {
